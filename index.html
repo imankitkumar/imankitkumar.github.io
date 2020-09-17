@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Sofia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body{
+    width: 100%;
+    height: 100%;
+    font-family: Poppins
+  }
+ 
+  .intro{
+    color: ;
+    background: darkgrey;
+    border-radius: 32px;
+    width: 90%;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    top: 18px;
+    z-index: 1;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    animation: side 3s 2s forwards
+  }
+ 
+  @keyframes side{
+    from{
+      transform: translateX(-400px);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+  @@keyframes sticky{
+    from{
+      position: relative
+    }
+    to{
+      position: sticky;
+      top: 0
+    }
+  }
+  .about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center
+  }
+  .avatar{
+  width: 50%;
+  height: auto;
+  border: 4px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation: top 3s forwards
+  }
+  .p{
+   margin-top: 50px;
+   animation: fadeIn 4s forwards
+  }
+  p{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    position: relative;
+    opacity: 0.8
+    }
+   p span{
+     animation: fadeIn 0.8s infinite
+   }
+   @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+   }
+  @keyframes skl {
+  from {
+  width: 0;
+  }
+  to {
+  width: 100%;
+  }
+  }
+  
+      @keyframes top {
+      from {
+      top: -300px;
+      }
+      to {
+      top: 40px;
+      }
+      }
+  h3{
+    color: white
+  }
+  ul{
+  list-style-type: none;
+}
+
+  ul.images {
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto;
+}
+
+ul.images li {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 110px;
+  border-radius: 20px 50px;
+  border: 4px solid grey;
+  margin: 7px;
+  text-align: center;
+  padding-top: 90px;
+  font-weight: bold;
+  position: relative;
+  color: #d3d3d3;
+  letter-spacing: 1px;
+  
+  }
+h3::before{
+  content: ">>>";
+}
+h3{
+  letter-spacing: 2px;
+ animation: fadeIn 3s forwards
+}
+
+.im{
+background-image: url('https://tuliv.in/Demo/1.jpeg');
+z-index: -1
+}
+
+ul.image {
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+ul.image li {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid grey;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-align: center;
+}
+
+.prj{
+  display: block;
+margin-top: 50px;
+position: relative;
+animation: skl 2s forwards
+}
+h2{
+  color: white;
+}
+h2::after{
+  content: "💓"
+}
+
+.year{
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 2px solid #aa00ff;
+letter-spacing: 1px
+  
+}
+.but{
+  background: darkgrey;
+  color: #e5e7e9;
+  border-radius: 20px;
+  padding: 7px;
+  font-size: 13px;
+  border: 2px solid darkgrey
+}
+.btn {
+  -ms-transform: skewY(160deg);
+  transform: skewY(160deg);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 72px;
+  height: 30px;
+  padding: 5px;
+  background: darkblue;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #e5e7e9;
+  text-align: center;
+  font-size: 11px;
+  opacity: 0.8
+}
+
+#txt{
+margin-top: 10px;
+color: white;
+vertical-align: top;
+display: inline-block;
+text-align: center;
+width: 120px;
+}
+.fa-github{
+  font-size: 17px
+}
+
+.skl{
+  margin-top: 80px;
+  position: relative;
+  animation: skl 4s forwards
+}
+
+.yr{
+  margin-top: 40px;
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center
+}
+.journey{
+width: 93%;
+height: auto;
+border: 10px solid lightgrey;
+border-radius: 50px 20px;
+background: #696969;
+text-align: center;
+opacity: 0.5;
+padding: 4px;
+white-space: pre-line;
+letter-spacing: 3px;
+color: white;
+font-size: 24px;
+overflow: hidden;
+font-weight: bolder
+}
+.journey:hover{
+opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+.intro{width: 50%;
+  text-align: center;
+  margin: auto;
+  transform: translateX(-800px);
+
+}
+.year{
+  font-size: 30px
+}
+input{
+  width: 80%;
+  margin: auto
+}
+input[type="submit"]{
+  width: 40%;
+}
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="intro">
+    <span>Hey ! 👋 Welcome to My Portfolio</span>
+  </div>
+  <div class="about">
+  <img class="avatar" src="https://raw.githubusercontent.com/imankitkumar/imankitkumar.github.io/master/IMG_20200909_170038.jpg" alt="avatar">
+  <div class="p">
+   <p>>> Ankit Gangwar <span>|</span></p>
+   <p>>> Web Developer || Programmer <span>|</span></p>
+   <p>>> Noobie Android Developer <span>|</span></p></div>
+  </div>
+ 
+  <main>
+  <div class="skl">
+  
+    <h3> Skills</h3>
+    <ul class="image">
+      
+      <li id="banner">
+        <div id="txt">
+          <img src="https://img.icons8.com/nolan/344/python.png" width="60%">Python</div>
+           <div class="fill">
+             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+               <path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+         c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+         c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+             </svg>
+           </div>
+        
+      </li>
+      
+         <li id="banner">
+         <div id="txt"><img src="https://img.icons8.com/color/452/flutter.png" width="60%">Flutter</div>
+            <div class="fill">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+          c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+          c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+              </svg>
+            </div>
+        
+           
+         </li>
+        <li id="banner">
+         <div id="txt"><img src=" https://img.icons8.com/color/344/nodejs.png" width="70%"></div>
+        <div class="fill">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+          c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+          c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+              </svg>
+            </div>
+     </li>
+      <li id="banner">
+      <div id="txt"><img src="https://img.icons8.com/ultraviolet/344/php.png" width="50%"></div>
+          <div class="fill">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+              <path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+        c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+        c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+            </svg>
+          </div>
+        
+      </li>
+      
+      
+         
+         <li id="banner">
+            <div id="txt"><img src="https://img.icons8.com/ultraviolet/344/css-filetype.png" width="50%"></div>
+               <div class="fill">
+                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                   <path fill="#04ACFF" id="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+             c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+             c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+                 </svg>
+               </div>
+           
+         </li>
+    </ul>
+    </div>
+       <div class="prj">
+  <h3> Projects</h3>
+  <ul class="images">
+    <div>
+     
+  <li class="im"><span class="but">FK AUTO BUY</span>
+       <a href="https://github.com/imankitkumar?tab=repositories" class="btn"><i class="fa fa-github"></i> Github</a></li></div>
+     <div>
+  <li class="im"><span class="but">GAANA MP3 DL</span><a href="https://github.com/imankitkumar?tab=repositories" class="btn"><i class="fa fa-github"></i> Github</a></li></div>
+     <div>
+  <li class="im"><span class="but">PORTFOLIO</span> <a href="https://github.com/imankitkumar?tab=repositories" class="btn"><i class="fa fa-github"></i> Github</a></li></div>
+     <div>
+  <li class="im"><span class="but">DOWNLOADERS</span> <a href="https://github.com/imankitkumar?tab=repositories" class="btn"><i class="fa fa-github"></i> Github</a></li></div>
+  </ul>
+  </div>
+ <p class="year">>>> About my journey so far 🙂</p>   
+ <div class="yr">
+    <h2>2017 </h2>
+    <div class="journey one">
+     <p>Perfection [in design] is achieved, not when there is nothing more to add, but when there is nothing left to take away.</p> 
+
+    </div>
+  
+    <h2>2018 </h2>
+    <div class="journey two">
+     <p>Measuring programming progress by the lines of code is like measuring aircraft building progress by weight.</p> 
+    </div>
+  
+    <h2>2019 </h2>
+    <div class="journey three">
+     <p>First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.</p> 
+    </div>
+  
+    <h2>2020 </h2>
+    <div class="journey four">
+     <p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p> 
+    </div>
+    </div>
+    
+    <div class="contact">
+      <h3> Get in Touch</h3>
+        <div class="form">
+          <form>
+            <h2>Contact Now </h2>
+            <input name="nm" type="text" placeholder="Name" >
+               <input name="email" type="email" placeholder="Email" required>
+            <input id="msg" type="text" placeholder="Message" required>
+           <input id="sub" type="submit" value="Proceed">
+           <span id="submit"></span>
+          </form>
+        </div>
+    </div>
+</main>
+<button class="fix"><i class="fa fa-arrow-circle-o-up"></i></button>
+  <div class="footer">
+  <p>Made With <i class="fa fa-heart"></i> By Ankit</p>
+  <p>2020</p>
+</div>
+  <script src="main.js"></script>
+
+</body>
+</html>
